@@ -1,0 +1,154 @@
+.govje-button {
+    height: 38px;
+    border: 0;
+    border-bottom: 3px solid $colour-dark-grey;
+    padding: 0 15px;
+    font-size: 18px;
+    color: $colour-white;
+    margin: 0 5px 0 0;
+    font-weight: 600;
+    text-align: center;
+    white-space: nowrap;
+    display: inline-block;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    user-select: none;
+    border-radius: 0;
+    line-height: 29px;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+a.govje-button {
+    color: $colour-white !important;
+    text-decoration: none !important;
+    padding-top: 3px;
+
+    &:focus,
+    &:active,
+    &:hover {
+        padding-top: 5px;
+    }
+}
+
+.govje-button--default {
+    background: $colour-red;
+    background-color: $colour-red;
+
+    &:focus,
+    &:active,
+    &:hover {
+        background: darken($colour-red, 9%);
+        border-bottom: none;
+        color: $colour-white;
+    }
+}
+
+.govje-button--primary {
+    background: $colour-primary-button;
+    background-color: $colour-primary-button;
+
+    &:focus,
+    &:active,
+    &:hover {
+        background: darken($colour-primary-button, 9%);
+        border-bottom: none;
+        color: $colour-white;
+    }
+}
+
+.govje-button--secondary {
+    background: $colour-secondary-button;
+    background-color: $colour-secondary-button;
+
+    &:focus,
+    &:active,
+    &:hover {
+        background: darken($colour-secondary-button, 9%);
+        border-bottom: none;
+        color: $colour-white;
+    }
+}
+
+.govje-button--cancel {
+    background: $colour-mid-grey;
+
+    &:focus,
+    &:active,
+    &:hover {
+        background: darken($colour-mid-grey, 9%);
+        border-bottom: none;
+        color: $colour-white;
+    }
+}
+
+.govje-button--error {
+    background: $colour-error;
+
+    &:focus,
+    &:active,
+    &:hover {
+        background: darken($colour-error, 9%);
+        border-bottom: none;
+        color: $colour-white;
+    }
+}
+
+.govje-button--back-to-top {
+    position: fixed;
+    top: 0;
+    right: 20px;
+    background-color: $colour-red;
+    font-size: em(12px);
+    padding: 1em;
+    border: 0px;
+    z-index: 100;
+    height: 38px;
+
+    &:focus,
+    &:active,
+    &:hover {
+        background: $colour-focus-blue-light !important;
+        padding-top: 1em;
+        text-decoration: underline;
+    }
+}
+
+a.govje-cta {
+    @extend .govje-button;
+    color: #fff !important;
+    text-decoration: none;
+    padding-top: 3px;
+
+    &:focus,
+    &:active,
+    &:hover {
+        padding-top: 5px;
+    }
+
+    &:after {
+        content: "\f061";
+        font-family: FontAwesome;
+        font-size: 18px;
+        margin-left: 10px;
+    }
+}
+
+a.govje-cta--default {
+    @extend .govje-button--default;
+}
+
+a.govje-cta--primary {
+    @extend .govje-button--primary;
+}
+
+a.govje-cta--secondary {
+    @extend .govje-button--secondary;
+}
+
+a.govje-cta--wrap {
+    white-space: normal !important;
+    max-width: 100% !important;
+    height: auto !important;
+}

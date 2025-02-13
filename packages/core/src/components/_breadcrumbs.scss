@@ -1,0 +1,47 @@
+.govje-breadcrumbs {
+    margin-bottom: 20px;
+}
+
+.govje-breadcrumbs ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.govje-breadcrumbs>ul>li:first-child {
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.govje-breadcrumbs > ul > li {
+    display: inline-block;
+    position: relative;
+    padding-left: 0.9em;
+    margin-left: 0.6em;
+    margin-top: 10px;
+    font-size: 1.14286em;
+}
+
+.govje-breadcrumbs > ul > li > a {
+    color: $colour-charcoal;
+}
+
+.govje-breadcrumbs > ul > li > a:hover {
+    color: $colour-red;
+}
+
+.govje-breadcrumbs>ul>li:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -0.206875em;
+    width: 0.4375em;
+    height: 0.4375em;
+    margin: auto 0;
+    transform: rotate(45deg);
+    border: solid;
+    border-width: 1px 1px 0 0;
+    border-color: #505a5f;
+}

@@ -1,0 +1,128 @@
+.govje-header {
+    background-color: $colour-red;
+    width: 100%;
+    overflow: auto;
+}
+
+.govje-header--service {
+    background-color: black;
+    border-bottom: 8px solid $colour-red;
+    color: white;
+}
+
+.govje-header--container {
+    @extend .container;
+    padding-top: 0;
+}
+
+.govje-header--info {
+    color: #fff;
+    float: left;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 18px;
+    margin-top: 15px;
+}
+
+.govje-header--info > .govje-header--info--line1 {
+    display: none;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.govje-header--info > .govje-header--info--line2 {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .govje-header--info > .govje-header--info--line1 {
+        display: block;
+    }
+}
+
+@media (min-width: 992px) {
+    .govje-header--info > .govje-header--info--line1 {
+        display: block;
+    }
+}
+
+.govje-header--logo {
+    color: #fff !important;
+    float: left;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 40px;
+    padding: 5px 25px 5px 0;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.govje-header--logo img {
+    display: inline-block;
+    height: 58px;
+    max-width: 100%;
+    vertical-align: middle;
+    margin: 0 8px 0 0;
+}
+
+.govje-header a {
+    float: left;
+    font-size: 36px;
+    font-family: proxima-nova,sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    color: #fff;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 25px;
+}
+
+.govje-header--links {
+    float: right;
+    list-style: none;
+}
+
+.govje-header--links li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.govje-header--links li a {
+    color: #fff;
+    font-size: 1.14286em;
+    padding-right: 0;
+    font-family: proxima-nova,sans-serif;
+    text-decoration: underline;
+}
+
+.govje-header--service-info {
+    display: flex;
+    gap: 12px;
+    color: #fff;
+    float: left;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 18px;
+    margin-top: 25px;
+}
+
+.govje-header--service-name {
+    font-size: 22px;
+}
+
+.govje-header--service-badge {
+    background-color: #B60011;
+    color: white;
+    padding: 0 6px; 
+}
+
+@media (max-width: 768px) {
+    .govje-header--service-info {
+        margin-top: 5px;
+        margin-bottom: 15px;
+    }
+
+    .govje-header--service-name {
+        font-size: 18px;
+    }
+}

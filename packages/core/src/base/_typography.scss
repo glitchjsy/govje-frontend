@@ -1,0 +1,50 @@
+$base-font-size: 14px;
+$title-font-size: 36px;
+
+html {
+    font-size: $base-font-size;
+}
+
+body {
+    font-family: proxima-nova, sans-serif;
+    -ms-overflow-style: scrollbar;
+}
+
+// Typekit
+.wf-loading {
+    visibility: hidden;
+}
+
+.wf-active {
+    visibility: visible;
+}
+
+.govje-title {
+    font-size: $title-font-size;
+    font-family: proxima-nova, sans-serif;
+    margin-top: 0;
+    font-weight: 700;
+    margin-bottom: 18px;
+
+    @media (max-width: 768px) {
+        font-size: 28px;
+        margin-bottom: 5px;
+    }
+
+    @media (max-width: 480px) {
+        font-size: 28px;
+        margin-bottom: 5px;
+    }
+}
+
+/* TODO */
+article.pagecontent {
+    margin-bottom: 35px;
+    font-size: 1.28571em;
+    float: left;
+    width: 100%;
+}
+
+article.pagecontent p {
+    font-size: 1em;
+}

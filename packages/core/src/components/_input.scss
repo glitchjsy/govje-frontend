@@ -1,0 +1,47 @@
+.govje-input {
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #91918e;
+    color: #1d1d1b;
+    font-size: 18px;
+    height: 38px;
+    line-height: 35px;
+    min-width: 1.8em;
+    overflow-wrap: normal;
+    padding: 6px 12px;
+    vertical-align: middle;
+    width: 100%;
+    display: table-cell;
+}
+
+.govje-input:focus-visible {
+    outline-color: $colour-focus-blue-light;
+}
+
+.govje-input--error {
+    border: 2px solid $colour-red;
+}
+
+.govje-form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.govje-form-group--error {
+    border-left: 5px solid $colour-red;
+    padding-left: 15px;
+}
+
+.govje-label {
+    font-size: 18px;
+}
+
+.govje-hint {
+    font-size: 16px;
+    color: $colour-muted;
+}
+
+.govje-form-group--error-message {
+    color: $colour-red;
+    font-size: 18px;
+}

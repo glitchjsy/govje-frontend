@@ -1,0 +1,31 @@
+a.govje-link {
+    font-family: proxima-nova, sans-serif;
+    color: $colour-red;
+    text-decoration: underline;
+
+    &:hover {
+        color: $colour-charcoal;
+    }
+
+    &:visited {
+        color: $colour-charcoal;
+    }
+
+    &:focus {
+        background: $colour-focus-blue-light !important;
+        color: $colour-white !important;
+    }
+
+    &:active {
+        background: $colour-focus-blue-light !important;
+        color: $colour-white !important;
+    }
+}
+
+a.govje-link--charcoal {
+    color: $colour-charcoal;
+
+    &:hover {
+        color: $colour-red;
+    }
+}

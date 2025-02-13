@@ -1,0 +1,151 @@
+.govje-footer {
+    background-color: #e0e0e0;
+    width: 100%;
+    padding: 15px 0 30px 0;
+}
+
+@media (min-width: 480px) {
+    .govje-footer {
+        padding-bottom: 30px;
+    }
+}
+
+.govje-footer--social-media {
+    padding-bottom: 10px;
+    margin-bottom: 0;
+}
+
+@media (max-width: 480px) {
+    .govje-footer--social-media {
+        padding-bottom: 0;
+    }
+}
+
+.govje-footer--social-media.govje-footer--homepage dt {
+    display: none !important;
+}
+
+.govje-footer--social-media.govje-footer--homepage dd a .fa-circle {
+    color: transparent;
+}
+
+.govje-footer--social-media.govje-footer--homepage dd a:hover .fa-circle {
+    color: #b60011;
+}
+
+.govje-footer--social-media.govje-footer--homepage dd a:hover .fa-inverse {
+    color: #fff
+}
+
+@media (hover: none) {
+    .govje-footer--social-media.govje-footer--homepage dd a:hover .fa-inverse {
+        color: #1d1d1b
+    }
+}
+
+.govje-footer--social-media.govje-footer--homepage .fa-inverse {
+    color: #1d1d1b
+}
+
+.govje-footer--social-media dt {
+    display: inline-block;
+    padding-right: 10px;
+    padding-top: 4px;
+    font-size: 22px;
+    font-family: proxima-nova, sans-serif;
+    font-weight: 700;
+    vertical-align: top
+}
+
+@media (max-width: 480px) {
+    .govje-footer--social-media dt {
+        display: block
+    }
+}
+
+.govje-footer--social-media dd {
+    display: inline-block;
+    padding: 0 5px 10px 5px;
+    margin-inline-start: 0;
+}
+
+@media (max-width: 480px) {
+    .govje-footer--social-media dd {
+        padding: 10px 5px 20px 0
+    }
+}
+
+.govje-footer--social-media dd a .fa-circle {
+    color: #7d7d7d
+}
+
+.govje-footer--social-media dd a:hover .fa-circle {
+    color: #b60011 !important
+}
+
+@media (hover: none) {
+    .govje-footer--social-media dd a:hover .fa-circle {
+        color: transparent
+    }
+}
+
+.govje-footer--social-media dd a:focus i {
+    border: 2px solid #095aa2
+}
+
+.govje-footer--links {
+    list-style: none;
+    display: inline;
+    margin: 0;
+    padding: 0
+}
+
+.govje-footer--links li {
+    display: inline;
+    padding-right: 16px
+}
+
+@media (max-width: 480px) {
+    .govje-footer--links li {
+        display: block !important;
+        padding-bottom: 12px
+    }
+}
+
+@media (max-width: 715px) {
+    .govje-footer--links li.right {
+        float: left !important;
+        padding-top: 10px
+    }
+}
+
+.govje-footer--links li:last-child {
+    padding-right: 0
+}
+
+.govje-footer--links a {
+    color: #1d1d1b;
+    text-decoration: underline;
+    font-size: 1.14286em;
+    font-family: proxima-nova, sans-serif
+}
+
+.govje-footer--links a:hover {
+    color: #b60011 !important
+}
+
+.govje-footer--links a:visited {
+    color: #1d1d1b
+}
+
+.govje-footer--social-media.govje-footer--homepage {
+    margin-left: -10px
+}
+
+.govje-footer--social-media.govje-footer--homepage .fa-lg {
+    font-size: 1.5em
+}
+
+.govje-footer--copyright {
+    float: right;
+}

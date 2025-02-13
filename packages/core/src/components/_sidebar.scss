@@ -1,0 +1,150 @@
+.govje-sidebar-social {
+    margin-bottom: 20px;
+    float: right;
+}
+
+.govje-sidebar {
+    float: left;
+
+    .scrollable .fixed-column {
+        display: none;
+    }
+
+    .govje-button--primary {
+        margin-bottom: 10px;
+    }
+
+    @media (max-width: 480px) {
+        background: $colour-light-grey;
+        overflow: hidden;
+        margin: 0;
+        width: 100%;
+    }
+
+    #social {
+        @media (max-width: 480px) {
+            padding-top: 10px;
+        }
+
+        height: 30px;
+
+        div.firstbutton {
+            float: left;
+            padding-left: 20px;
+            margin-right: 0;
+            font-size: 14px;
+            line-height: 14px;
+
+            @media (max-width: 480px) {
+                padding-left: 0;
+            }
+
+            @media (max-width: 1199px) {
+                padding-left: 0;
+            }
+        }
+
+        div.button {
+            float: left;
+            margin-right: 8px;
+            font-size: 14px;
+            line-height: 14px;
+        }
+
+        .email-share-button {
+            height: 21px;
+            padding: 1px 8px 1px 6px;
+            background-color: $colour-light-grey;
+            color: $colour-black;
+            border-radius: 3px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            padding-top: 3px;
+
+            &:before {
+                content: "\f0e0";
+                font-family: FontAwesome;
+                font-size: 16px;
+                margin-right: 5px;
+                color: $colour-mid-grey;
+                display: inline-block;
+                text-decoration: none;
+            }
+
+            &:hover {
+                color: $colour-red;
+                text-decoration: underline;
+            }
+        }
+    }
+
+    p {
+        font-size: 18px;
+        font-family: proxima-nova, sans-serif;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 10px 0;
+        padding: 0;
+
+        li {
+            padding-bottom: 5px;
+
+            a {
+                font-size: 18px;
+                font-family: proxima-nova, sans-serif;
+
+                &:hover {
+                    color: $colour-red;
+                }
+            }
+
+            a[target=_blank] {
+                &:after {
+                    content: "\f08e";
+                    font-family: FontAwesome;
+                    font-size: 18px;
+                    margin-left: 10px;
+                    display: inline-block;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+    h1 {
+        color: $colour-red;
+        font-size: 22px;
+        font-family: proxima-nova, sans-serif;
+        font-weight: 700;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    h3 {
+        color: $colour-red;
+        font-size: 22px;
+        font-family: proxima-nova, sans-serif;
+        font-weight: 700;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    h4 {
+        color: $colour-red;
+        font-size: 22px;
+        font-family: proxima-nova, sans-serif;
+        font-weight: 700;
+    }
+}
+
+.govje-sidepanel {
+    background-color: $colour-light-grey;
+    border: 0 solid $colour-mid-grey;
+    padding: 10px 20px 10px;
+    margin-bottom: 20px;
+    float: left;
+    width: 100%;
+}

@@ -1,0 +1,68 @@
+.govje-oursites {
+    margin-top: 0;
+    background-color: $colour-dark-grey;
+    color: white;
+    padding: 10px 0 10px 0;
+}
+
+.govje-oursites--title {
+    width: 110px;
+    float: left;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 25px;
+}
+
+@media (max-width: 480px) {
+    .govje-oursites--title {
+        width: 100%;
+        float: none;
+    }
+}
+
+@media (min-width: 480px) {
+    .govje-oursites--links {
+        width: calc(100% - 110px);
+        float: left;
+    }
+}
+
+.govje-oursites ul {
+    list-style-type: none;
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+@media (max-width: 480px) {
+    .govje-oursites ul {
+        display: block;
+    }
+}
+
+.govje-oursites ul li {
+    display: inline-block;
+    padding: 0 18px;
+    margin-bottom: 5px;
+    border-left: solid 1px $colour-white;
+}
+
+@media (max-width: 480px) {
+    .govje-oursites ul li {
+        display: block;
+        border-left-style: none;
+        padding: 8px 0;
+        margin-bottom: 0;
+    }
+}
+
+.govje-oursites ul a {
+    color: white;
+    text-decoration: underline;
+    font-family: proxima-nova, sans-serif;
+    font-size: 16px;
+}
+
+.govje-oursites ul a:hover {
+    color: $colour-red;
+}

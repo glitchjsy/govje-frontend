@@ -1,0 +1,52 @@
+.govje-table {
+    margin: 10px 0px 10px 0px;
+    padding: 0px;
+    border-collapse: collapse;
+    width: 100%;
+    clear: both;
+    float: left;
+}
+
+.govje-table thead th {
+    padding: 5px;
+    background: $colour-red;
+    color: $colour-white;
+    font-weight: bold;
+    text-align: left;
+    border: solid 1px #E0E0E0;
+}
+
+.govje-table thead th {
+    padding: 5px;
+    background-color: $colour-light-grey;
+    color: $colour-charcoal;
+    font-weight: bold;
+    text-align: left;
+    border: solid 1px #E0E0E0;
+}
+
+.govje-table tbody td {
+    border: solid 1px #E0E0E0;
+    vertical-align: top;
+    padding: 5px;
+}
+
+.govje-table tbody th {
+    border: solid 1px #E0E0E0;
+    background-color: $colour-light-grey;
+    color: $colour-charcoal;
+    vertical-align: top;
+    padding: 5px;
+    text-align: left;
+}
+
+.govje-table--default tbody th,
+.govje-table--default thead th {
+    background-color: $colour-red;
+    color: $colour-white;
+}
+
+.govje-table--first-row {
+    background-color: $colour-light-grey !important;
+    color: $colour-charcoal !important;
+}
